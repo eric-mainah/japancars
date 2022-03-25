@@ -8,7 +8,7 @@
 }
 
 .p_first{
-	font-size: large;
+	font-size: larger;
 	text-align: center;
 	font-weight: bold;
 }
@@ -59,4 +59,8 @@ footer{
 .flex-container{
 	display: flex;
 	flex-wrap: wrap;
+}
+
+h4{
+	text-align: center;
 }
