@@ -6,17 +6,10 @@
 	margin-top: auto;
 	margin-bottom: auto;
 }
+
 .p_first{
 	font-size: large;
 	text-align: center;
-	font-weight: bold;
-}
-
-.pfirst{
-	color: black;
-	font-size: large;
-	text-align:center;
-	font-family: cursive;
 	font-weight: bold;
 }
 
@@ -50,15 +43,20 @@ body{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	font-family: 'Fredoka', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
 }
 
 *{
 	background: #f3e0e2;
+	font-family: 'Fredoka', sans-serif;
 }
 
 footer{
 	text-align: center;
+}
+
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
 }
