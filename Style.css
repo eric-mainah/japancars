@@ -23,7 +23,7 @@ header {
 
 /* Style the navigation bar */
 .navbar {
-    background-color: #4CAF50; /* Background color for the navigation bar */
+    background-color: #f3e0e2; /* Background color for the navigation bar */
     border-bottom: 2px solid #333; /* Bottom border */
 }
 
@@ -45,7 +45,7 @@ header {
 }
 
 .nav-item {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .nav-link {
