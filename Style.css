@@ -6,107 +6,64 @@ html, body, h1, h2, h3, h4, p, ul, li {
 
 /* Set up a basic font and background for the entire page */
 body {
-    font-family: 'Fredoka', sans-serif;
-    background: #f3e0e2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e0e2;
+    color: #333;
 }
 
-/* Style the top header */
-.top_header {
-    text-align: center;
-    font-weight: bold;
-}
-
-/* Style the introductory paragraph */
-.p_first {
-    font-size: larger;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20px; /* Add some top margin for spacing */
-}
-
-/* Style the social media icons */
-.fa {
-    font-size: 30px;
-    width: 50px;
-    height: 50px; /* Ensure consistent icon size */
-    line-height: 50px; /* Vertical centering for icons */
-    text-align: center;
-    margin: 5px;
-    border-radius: 50%; /* Make them circular */
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-/* Style the footer */
-footer {
-    text-align: center;
-    margin-top: 20px; /* Add top margin for spacing */
-}
-
-/* Flex container for potential future use */
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Center-align heading elements */
-h4 {
-    text-align: center;
-}
-
-/* Style for cards or other elements */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-}
-
-/* Custom styles for the navigation bar */
-.navbar-custom {
-    background-color: #fff; /* Background color */
-    border-bottom: 2px solid #ccc; /* Bottom border */
+/* Header and Navigation */
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
 }
 
 .navbar-brand-custom {
-    font-weight: bold; /* Brand text font weight */
-    color: #333; /* Brand text color */
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
 }
 
 .navbar-toggler-icon-custom {
-    border-color: #333; /* Toggle button color */
+    border-color: #333;
 }
 
-.navbar-nav-custom .nav-link {
-    color: #333; /* Navigation link text color */
-    font-weight: bold; /* Navigation link text font weight */
-    margin-right: 20px; /* Spacing between navigation links */
+.navbar-nav-custom {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
 }
 
-.navbar-nav-custom .nav-link:hover {
-    color: #555; /* Hover color for navigation links */
+.nav-item {
+    margin-right: 20px;
 }
 
-/* Responsive styles for smaller screens */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive Navigation */
 @media (max-width: 768px) {
-    .navbar-nav-custom .nav-link {
-        margin-right: 0; /* Remove spacing between navigation links on smaller screens */
+    .navbar-nav-custom {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-nav-custom.active {
+        display: flex;
+    }
+
+    .navbar-toggler-icon-custom {
+        display: flex;
     }
 }
