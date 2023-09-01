@@ -10,9 +10,9 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f3e0e2;
     color: #333;
-     /*display: flex; /* Use flexbox to center vertically and horizontally */
+     /*display: flex; Use flexbox to center vertically and horizontally */
     justify-content: center;
-    align-items: center;
+   /* align-items: center;*/
     min-height: 100vh;
 }
 
