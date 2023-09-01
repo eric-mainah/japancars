@@ -6,6 +6,7 @@ html, body, h1, h2, h3, h4, p, ul, li {
 
 /* Set up a basic font and background for the entire page */
 body {
+    padding-top: 70px;
     font-family: 'Arial', sans-serif;
     background-color: #f3e0e2;
     color: #333;
