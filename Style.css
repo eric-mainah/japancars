@@ -1,72 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
-
-.top_header{
-	text-align: center;
-	font-weight: bold;
-	margin-top: auto;
-	margin-bottom: auto;
+/* Reset some default margin and padding */
+html, body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
 }
 
-.p_first{
-	font-size: larger;
-	text-align: center;
-	font-weight: bold;
-}
-
-.fa {  
-  padding: 20px;  
-  text-align: center;  
-  margin: 5px 2px;  
-  font-size: 30px;  
-  width: 50px;  
-}  
-
-.fa-facebook {  
-  background: #3B5998;  
-  color: white;  
-}  
-
-.fa-instagram {  
-	background: #125688;  
-	color: white;  
-  }  
-
-  .fa-twitter {  
-	background: #55ACEE;  
-	color:white;
-  }
-  
-
-body{
+/* Set up a basic font and background for the entire page */
+body {
+    font-family: 'Fredoka', sans-serif;
     background: #f3e0e2;
-	display: inline;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	height: 100vh;
-	margin: -20px 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-*{
-	background: #f3e0e2;
-	font-family: 'Fredoka', sans-serif;
+/* Style the top header */
+.top_header {
+    text-align: center;
+    font-weight: bold;
 }
 
-footer{
-	text-align: center;
+/* Style the introductory paragraph */
+.p_first {
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px; /* Add some top margin for spacing */
 }
 
-.flex-container{
-	display: flex;
-	flex-wrap: wrap;
+/* Style the social media icons */
+.fa {
+    font-size: 30px;
+    width: 50px;
+    height: 50px; /* Ensure consistent icon size */
+    line-height: 50px; /* Vertical centering for icons */
+    text-align: center;
+    margin: 5px;
+    border-radius: 50%; /* Make them circular */
 }
 
-h4{
-	text-align: center;
+.fa-facebook {
+    background: #3B5998;
+    color: white;
 }
 
-.cards{
-	display: grid;
-	grid-template-columns: repeat(auto-fit,  minmax(200px , 1fr));
-	gap: 15px;
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    margin-top: 20px; /* Add top margin for spacing */
+}
+
+/* Flex container for potential future use */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Center-align heading elements */
+h4 {
+    text-align: center;
+}
+
+/* Style for cards or other elements */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
 }
