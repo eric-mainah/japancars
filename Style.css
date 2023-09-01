@@ -6,13 +6,11 @@ html, h1, h2, h3, h4, p, ul, li {
 
 /* Set up a basic font and background for the entire page */
 body {
-    padding-top: 70px;
+    padding-top: 10px;
     font-family: 'Arial', sans-serif;
     background-color: #f3e0e2;
     color: #333;
-     /*display: flex; Use flexbox to center vertically and horizontally */
     justify-content: center;
-   /* align-items: center;*/
     min-height: 100vh;
 }
 
