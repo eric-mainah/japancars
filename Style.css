@@ -9,6 +9,10 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f3e0e2;
     color: #333;
+    display: flex; /* Use flexbox to center vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /* Header and Navigation */
@@ -18,15 +22,21 @@ header {
     padding: 10px 0;
 }
 
+/* Style the navigation bar */
+.navbar {
+    background-color: #4CAF50; /* Background color for the navigation bar */
+    border-bottom: 2px solid #333; /* Bottom border */
+}
+
 .navbar-brand-custom {
     font-weight: bold;
     text-decoration: none;
-    color: #333;
+    color: #fff; /* Brand text color */
     font-size: 24px;
 }
 
 .navbar-toggler-icon-custom {
-    border-color: #333;
+    border-color: #fff; /* Toggle button color */
 }
 
 .navbar-nav-custom {
@@ -41,8 +51,22 @@ header {
 
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: #fff; /* Navigation link text color */
     font-weight: bold;
+}
+
+/* Center-align the .p_first class */
+.p_first {
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+/* Center-align the footer */
+footer {
+    text-align: center;
+    margin-top: 20px; /* Add top margin for spacing */
 }
 
 /* Responsive Navigation */
